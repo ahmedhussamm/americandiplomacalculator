@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>ACT Calculator</title>
+    <link rel="icon" href="https://inside.nku.edu/content/dam/testing-services/images/testing-act.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+</head>
+<body>
+
+<div class="container" dir="ltr" align="left m-5">
+    <br><br>
+
+
+
+
+    <div class="container">
+        <div class="card">
+            <h2 class="text-center text-warning p-4">American Diploma ACT Calculator</h2>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <form action="" class="m-70 m-auto" id="calc">
+                    <table class="table border">
+                        <tr>
+                            <td><label for="">GPA<br>Out of 4</label></td>
+                            <td><input placeholder="GPA Score" class="form-control" id="gpa"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="">ACT 1<br>Out of 36</label></td>
+                            <td><input placeholder="ACT 1 Score" class="form-control" type="number" id="act1"></td>
+                        </tr>
+
+
+                        <tr>
+                            <td><label for="">ACT 2<br>Out of 36</label></td>
+                            <td><input placeholder="ACT 2 Score" class="form-control" type="number" id="act2"></td>
+                        </tr>
+                    </table>
+                    <input class="btn btn-warning" type="submit" name="submit" value="Calculate"> 
+                    <input class="btn btn-primary" type="button" name="submit" value="EST Students" onclick="window.open('/main.html')">            
+                  
+                    <br><br>
+                            <table class="table" dir='ltr' align='left'>
+                                <thead>
+                                    <tr class="table-warning font-weight-bold">
+                                        <th>____</th>
+                                        <th>Score</th>
+                                        <th>Mark</th>
+                                                                            </tr>
+
+                                    <tr>
+                                        <th>GPA</th>
+                                        <th id="gpa_score"></th>
+                                        <th><span id="gpa_percent"></span>%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>ACT 1</th>
+                                        <th id="act1_score"></th>
+                                        <th><span id="act1_percent"></span>%</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>ACT 2</th>
+                                        <th id="act2_score"></th>
+                                        <th><span id="act2_percent"></span>%</th>
+                                    </tr>
+
+                                </thead>
+
+                            </table>
+
+                            <table class="table" dir=ltr align='left'>
+                                <thead>
+                                    <tr class="table-warning font-weight-bold">
+                                    <th class="align-center text-center">Total Mark is  <span id="total_mark"></span>%</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script src="index-act.js" defer></script> 
