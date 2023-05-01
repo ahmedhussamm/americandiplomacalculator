@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
     const gpa = document.getElementById("gpa").value;
     const gpa_percent = (Number(gpa) / 4) * 40;
     document.getElementById("gpa_percent").innerHTML = Number(gpa_percent);
-    let est1_percent = (est1 / 1600) * 75;
+    let est1_percent = (est1 / 1600) * 60;
     document.getElementById("est1_percent").innerHTML = Number(est1_percent);
 
     const est2 = document.getElementById("est2").value;
