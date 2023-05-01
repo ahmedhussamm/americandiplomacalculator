@@ -36,9 +36,6 @@ form.addEventListener("submit", (e) => {
     document.getElementById("est1_percent").innerHTML = Number(est1_percent);
 
     const est2 = document.getElementById("est2").value;
-    if (est2 < 890) {
-      alert("EST 2: Minimum accepted score is 890.");
-    }
     const est2_percent = (Number(est2) / 1600) * 15;
     document.getElementById("est2_percent").innerHTML = Number(est2_percent);
 
