@@ -44,9 +44,9 @@ function actToPercentile(actScore) {
 
   // Adjust percentile according to rules
   if (actScore >= 22) {
-    percentile *= 0.75;
+    percentile *= 0.60;
   } else {
-    percentile *= 0.6;
+    percentile *= 0.60;
   }
 
   // Round percentile to two decimal places
