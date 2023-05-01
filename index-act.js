@@ -130,9 +130,6 @@ form.addEventListener("submit", (e) => {
   document.getElementById("act1_percent").innerHTML = Number(act1_percent);
 
   const act2 = document.getElementById("act2").value;
-  if (act2 < 20) {
-    alert("ACT 2: Minimum accepted score is 20.");
-  }
   const act2_percent = act2ToPercentile(act2);
   document.getElementById("act2_percent").innerHTML = Number(act2_percent);
 
