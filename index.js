@@ -5,9 +5,20 @@ form.addEventListener("submit", (e) => {
     alert("EST 1: Minimum accepted score is 800.");
   }
   // IF CONDITIONS
+
   if (est1 >= 1090) {
-    const gpa = document.getElementById("gpa").value;
+    var subject1 = parseInt(document.getElementById("s1").value)
+    var subject2 = parseInt(document.getElementById("s2").value)
+    var subject3 = parseInt(document.getElementById("s3").value)
+    var subject4 = parseInt(document.getElementById("s4").value)
+    var subject5 = parseInt(document.getElementById("s5").value)
+    var subject6 = parseInt(document.getElementById("s6").value)
+    var subject7 = parseInt(document.getElementById("s7").value)
+    var subject8 = parseInt(document.getElementById("s8").value)
+    var subjectstotal = subject1 + subject2 + subject3 + subject4 + subject5 + subject6 + subject7 + subject8;
+    const gpa = (subjectstotal/800)*4;
     const gpa_percent = (Number(gpa) / 4) * 40;
+    const est1 = document.getElementById("est1").value;
     document.getElementById("gpa_percent").innerHTML = Number(gpa_percent);
     let est1_percent = (est1 / 1600) * 60;
     document.getElementById("est1_percent").innerHTML = Number(est1_percent);
@@ -28,9 +39,18 @@ form.addEventListener("submit", (e) => {
   }
 
   if (est1 < 1090) {
-    const gpa = document.getElementById("gpa").value;
-    const est1 = document.getElementById("est1").value;
+    var subject1 = parseInt(document.getElementById("s1").value)
+    var subject2 = parseInt(document.getElementById("s2").value)
+    var subject3 = parseInt(document.getElementById("s3").value)
+    var subject4 = parseInt(document.getElementById("s4").value)
+    var subject5 = parseInt(document.getElementById("s5").value)
+    var subject6 = parseInt(document.getElementById("s6").value)
+    var subject7 = parseInt(document.getElementById("s7").value)
+    var subject8 = parseInt(document.getElementById("s8").value)
+    var subjectstotal = subject1 + subject2 + subject3 + subject4 + subject5 + subject6 + subject7 + subject8;
+    const gpa = (subjectstotal/800)*4;
     const gpa_percent = (Number(gpa) / 4) * 40;
+    const est1 = document.getElementById("est1").value;
     document.getElementById("gpa_percent").innerHTML = Number(gpa_percent);
     let est1_percent = (est1 / 1600) * 60;
     document.getElementById("est1_percent").innerHTML = Number(est1_percent);
