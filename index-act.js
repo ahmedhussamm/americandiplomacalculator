@@ -123,7 +123,16 @@ form.addEventListener("submit", (e) => {
     alert("ACT 1: Minimum accepted score is 20.");
   }
   // IF CONDITIONS
-  const gpa = document.getElementById("gpa").value;
+  var subject1 = parseInt(document.getElementById("s1").value)
+  var subject2 = parseInt(document.getElementById("s2").value)
+  var subject3 = parseInt(document.getElementById("s3").value)
+  var subject4 = parseInt(document.getElementById("s4").value)
+  var subject5 = parseInt(document.getElementById("s5").value)
+  var subject6 = parseInt(document.getElementById("s6").value)
+  var subject7 = parseInt(document.getElementById("s7").value)
+  var subject8 = parseInt(document.getElementById("s8").value)
+  var subjectstotal = subject1 + subject2 + subject3 + subject4 + subject5 + subject6 + subject7 + subject8;
+  const gpa = (subjectstotal/800)*4;
   const gpa_percent = (Number(gpa) / 4) * 40;
   document.getElementById("gpa_percent").innerHTML = Number(gpa_percent);
   let act1_percent = actToPercentile(act1);
